@@ -1,0 +1,25 @@
+{
+  "name": "m39restapi",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u00003\u00009\u0000R\u0000E\u0000S\u0000T\u0000A\u0000P\u0000I\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasPriestley/m39RESTAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasPriestley/m39RESTAPI/issues"
+  },
+  "homepage": "https://github.com/LucasPriestley/m39RESTAPI#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.0"
+  }
+}
