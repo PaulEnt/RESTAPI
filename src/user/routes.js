@@ -2,16 +2,19 @@ const { Router } = require("express");
 const userRouter = Router();
 const {
   createUser,
-  findUser,
+  login,
+  getAllUsers,
   updateUser,
   deleteUser,
 } = require("./controllers");
+const { hashPass, comparePass, tokenCheck } = require("../middleware");
 
-userRouter.post("/user", createUser);
+userRouter.post("/user", hashPass, createUser);
+userRouter.post("/login", comparePass, login);
+userRouter.get("/user", getAllUsers);
+userRouter.get("/login", tokenCheck, login);
 
-userRouter.get("/user", findUser);
-
-userRouter.patch("/user", updateUser);
+userRouter.patch("/user", hashPass, updateUser);
 
 userRouter.delete("/user", deleteUser);
 
